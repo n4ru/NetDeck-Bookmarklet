@@ -25,6 +25,8 @@ loadScripts([
 	"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js",
 	"https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/cards.js",
 	"https://secure.bluehost.com/~nfourui1/netdeck/functions.php",
+	"https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/ZeroClipboard.js",
+	"https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/bPopup.js",
 	"https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/bDeck.js"
 ], function() {
 	bDeck();
