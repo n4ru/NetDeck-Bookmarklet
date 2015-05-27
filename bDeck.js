@@ -23,30 +23,28 @@ var deck = {
     copy: function(pref) {
         this.list = [];
         update();
-        while (!(this.list.length < 30)) {
-            this.list.unshift("url:" + window.location.href);
-            this.list.unshift("arena:" + arena);
-            this.list.unshift("name:" + deck.name.trim());
-            this.list.unshift("trackerimport");
-            $('#test').each(function() {
-                $(this).remove();
-            });
-            $('#global-zeroclipboard-html-bridge').each(function() {
-                $(this).remove();
-            });
-            $("body").append("<div id='test' style='display: block; position: fixed; opacity: 1; left: 50%; top: 50%;'><img src='https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/export.png'></div>")
-            $('#test').bPopup();
-            ZeroClipboard.config({
-                swfPath: '//secure.bluehost.com/~nfourui1/netdeck/bookmarklet/ZeroClipboard.swf',
-                forceHandCursor: true,
-                trustedDomains: [window.location.host, "secure.bluehost.com"]
-            });
-            var client = new ZeroClipboard($("#test img"));
-            client.on('copy', function(event) {
-                event.clipboardData.setData('text/plain', deck.list.join("\r\n"));
-                $('#test').bPopup().close();
-            });
-        }
+        this.list.unshift("url:" + window.location.href);
+        this.list.unshift("arena:" + arena);
+        this.list.unshift("name:" + deck.name.trim());
+        this.list.unshift("trackerimport");
+        $('#test').each(function() {
+            $(this).remove();
+        });
+        $('#global-zeroclipboard-html-bridge').each(function() {
+            $(this).remove();
+        });
+        $("body").append("<div id='test' style='display: block; position: fixed; opacity: 1; left: 50%; top: 50%;'><img src='https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/export.png'></div>")
+        $('#test').bPopup();
+        ZeroClipboard.config({
+            swfPath: '//secure.bluehost.com/~nfourui1/netdeck/bookmarklet/ZeroClipboard.swf',
+            forceHandCursor: true,
+            trustedDomains: [window.location.host, "secure.bluehost.com"]
+        });
+        var client = new ZeroClipboard($("#test img"));
+        client.on('copy', function(event) {
+            event.clipboardData.setData('text/plain', deck.list.join("\r\n"));
+            $('#test').bPopup().close();
+        });
     }
 };
 
