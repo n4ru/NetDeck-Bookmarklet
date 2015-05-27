@@ -23,7 +23,10 @@ function loadScripts(array, callback) {
 
 loadScripts([
 	"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js",
-	//"https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/cards.js",
+	"https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/cards_1.js",
+	"https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/cards_2.js",
+	"https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/cards_3.js",
+	"https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/cards_4.js",
 	"https://secure.bluehost.com/~nfourui1/netdeck/functions.php",
 	"https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/ZeroClipboard.js",
 	"https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/bPopup.js",

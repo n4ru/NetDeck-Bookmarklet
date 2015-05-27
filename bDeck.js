@@ -1,5 +1,6 @@
 deckx = false;
 arena = false;
+var cards_data = $.extend({}, cards_1, cards_2, cards_3, cards_4);
 var deck = {
     addCards: function(elemone, elemtwo, elemthree, lang) {
         var self = this;
