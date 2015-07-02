@@ -38,7 +38,7 @@ var deck = {
         ZeroClipboard.config({
             swfPath: '//netdeck.n4ru.it/bookmarklet/ZeroClipboard.swf',
             forceHandCursor: true,
-            trustedDomains: [window.location.host, "netdeck.n4ru.it"]
+            trustedDomains: [window.location.href]
         });
         var client = new ZeroClipboard($("#test img"));
         client.on('copy', function(event) {
