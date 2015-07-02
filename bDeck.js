@@ -1,6 +1,5 @@
 deckx = false;
 arena = false;
-var cards_data = $.extend({}, cards_1, cards_2, cards_3, cards_4);
 var deck = {
     addCards: function(elemone, elemtwo, elemthree, lang) {
         var self = this;
@@ -72,6 +71,8 @@ function bDeck() {
     if (deckx) {
         deck.copy();
     } else {
-        alert('Site not supported or deck not found.');
+        if (confirm('Site not supported or deck not found.\nWould you like to vote for support?')) {
+            $.get("https://netdeck.n4ru.it/vote.php?site=" + window.location.href.replace(/https*:\/\//, ""));
+        }
     }
 }

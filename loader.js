@@ -23,10 +23,7 @@ function loadScripts(array, callback) {
 
 loadScripts([
 	"//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js",
-	"//netdeck.n4ru.it/bookmarklet/cards_1.js",
-	"//netdeck.n4ru.it/bookmarklet/cards_2.js",
-	"//netdeck.n4ru.it/bookmarklet/cards_3.js",
-	"//netdeck.n4ru.it/bookmarklet/cards_4.js",
+	"//netdeck.n4ru.it/bookmarklet/cards.js",
 	"//netdeck.n4ru.it/functions.php",
 	"//netdeck.n4ru.it/bookmarklet/ZeroClipboard.js",
 	"//netdeck.n4ru.it/bookmarklet/bPopup.js",
