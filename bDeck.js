@@ -34,21 +34,13 @@ var deck = {
         $('#global-zeroclipboard-html-bridge').each(function() {
             $(this).remove();
         });
-        $("body").append("<div id='test' style='display: block; position: fixed; opacity: 1; left: 50%; top: 50%;'><img src='https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/export.png'></div>")
+        $("body").append("<div id='test' style='display: block; position: fixed; opacity: 1; left: 50%; top: 50%;'><img src='//netdeck.n4ru.it/bookmarklet/export.png'></div>")
         $('#test').bPopup();
-        if (window.location.protocol == "https:") {
-            ZeroClipboard.config({
-                swfPath: '//secure.bluehost.com/~nfourui1/netdeck/bookmarklet/ZeroClipboard.swf',
-                forceHandCursor: true,
-                trustedDomains: [window.location.host, "secure.bluehost.com"]
-            });
-        } else {
-            ZeroClipboard.config({
-                swfPath: '//netdeck.n4ru.it/bookmarklet/ZeroClipboard.swf',
-                forceHandCursor: true,
-                trustedDomains: [window.location.host, "netdeck.n4ru.it"]
-            });
-        }
+        ZeroClipboard.config({
+            swfPath: '//netdeck.n4ru.it/bookmarklet/ZeroClipboard.swf',
+            forceHandCursor: true,
+            trustedDomains: [window.location.host, "netdeck.n4ru.it"]
+        });
         var client = new ZeroClipboard($("#test img"));
         client.on('copy', function(event) {
             event.clipboardData.setData('text/plain', deck.list.join("\r\n"));

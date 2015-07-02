@@ -1,5 +1,5 @@
 // Actual Bookmarklet code:
-// javascript:(function (){document.getElementsByTagName('head')[0].appendChild(document.createElement('script')).src='https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/loader.js?'+Math.random();}());
+// javascript:(function (){document.getElementsByTagName('head')[0].appendChild(document.createElement('script')).src='//netdeck.n4ru.it/bookmarklet/loader.js?'+Math.random();}());
 
 function loadScripts(array, callback) {
 	var loader = function(src, handler) {
@@ -22,15 +22,15 @@ function loadScripts(array, callback) {
 }
 
 loadScripts([
-	"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js",
-	"https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/cards_1.js",
-	"https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/cards_2.js",
-	"https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/cards_3.js",
-	"https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/cards_4.js",
-	"https://secure.bluehost.com/~nfourui1/netdeck/functions.php",
-	"https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/ZeroClipboard.js",
-	"https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/bPopup.js",
-	"https://secure.bluehost.com/~nfourui1/netdeck/bookmarklet/bDeck.js"
+	"//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js",
+	"//netdeck.n4ru.it/bookmarklet/cards_1.js",
+	"//netdeck.n4ru.it/bookmarklet/cards_2.js",
+	"//netdeck.n4ru.it/bookmarklet/cards_3.js",
+	"//netdeck.n4ru.it/bookmarklet/cards_4.js",
+	"//netdeck.n4ru.it/functions.php",
+	"//netdeck.n4ru.it/bookmarklet/ZeroClipboard.js",
+	"//netdeck.n4ru.it/bookmarklet/bPopup.js",
+	"//netdeck.n4ru.it/bookmarklet/bDeck.js"
 ], function() {
 	bDeck();
 });
