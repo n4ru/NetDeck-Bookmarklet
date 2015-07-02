@@ -27,13 +27,9 @@ var deck = {
         this.list.unshift("arena:" + arena);
         this.list.unshift("name:" + deck.name.trim());
         this.list.unshift("trackerimport");
-        $('#test').each(function() {
-            $(this).remove();
-        });
-        $('#global-zeroclipboard-html-bridge').each(function() {
-            $(this).remove();
-        });
-        $("body").append("<div id='test' style='display: block; position: fixed; opacity: 1; left: 50%; top: 50%;'><img src='//netdeck.n4ru.it/bookmarklet/export.png'></div>")
+        $('#test').bPopup().close();
+        $('#test').remove();
+        $("body").append("<div id='test' style='position: fixed; opacity: 1; left: 50%; top: 50%;'><img src='//netdeck.n4ru.it/bookmarklet/export.png'></div>");
         $('#test').bPopup();
         ZeroClipboard.config({
             swfPath: '//netdeck.n4ru.it/bookmarklet/ZeroClipboard.swf',
